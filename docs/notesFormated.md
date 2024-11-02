@@ -2,11 +2,55 @@
 
 # Análise do Dataset de Imóveis de Ames
 
-<div align="left" style="max-width: 700px; margin: 0 auto; font-family: 'Segoe UI', Arial, sans-serif; font-size: 105%">
+<div align="left" style="max-width: 750px; margin: 0 auto; font-family: 'Segoe UI', Arial, sans-serif; font-size: 105%">
 
 ## Sobre o Dataset
 
 Este conjunto de dados contém informações detalhadas do Escritório de Avaliação de Ames, utilizadas para calcular os valores avaliados de propriedades residenciais individuais vendidas em Ames, Iowa, entre 2006 e 2010.
+
+## ⚠️ Limitações e Escopo do Modelo
+
+### Não Aplicável Para:
+
+#### **Imóveis Não Residenciais**:
+* Propriedades comerciais
+* Propriedades industriais
+* Áreas agrícolas
+
+#### **Bairros Excluídos**:
+* Blueste
+* Greens
+* GrnHill
+* Landmrk
+
+Devido à baixa representatividade estatística, previsões para estes bairros não serão confiáveis
+
+#### **Características Raras**:
+* Casas com piscina (apenas 1% da amostra)
+* Ruas não pavimentadas (0.2% dos casos)
+* Sistemas de aquecimento não-GasA
+
+Estas características foram simplificadas ou removidas do modelo
+
+### Restrições Temporais:
+* Dados limitados ao período 2006-2010
+* Não captura tendências de mercado pós-2010
+* Pode não refletir mudanças significativas no mercado imobiliário atual
+
+### Restrições Geográficas:
+* Específico para Ames, Iowa
+* Pode não ser generalizável para:
+  * Outras cidades do estado
+  * Mercados imobiliários de outros estados
+  * Áreas metropolitanas maiores
+
+## 🎯 Recomendações de Uso
+
+### Melhor Aplicável Para:
+* Imóveis residenciais unifamiliares
+* Vendas convencionais (Warranty Deed)
+* Bairros bem representados no dataset
+* Propriedades com características padrão do mercado de Ames
 
 ## Tratamento das Variáveis
 
